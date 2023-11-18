@@ -1,38 +1,78 @@
-body
-{
-    color:rgb(61, 21, 172);
-    text-align: center;
-    font-family:"Arial";
+body {
+    color: rgb(61, 21, 172);
+    font-family: "Arial";
     font-size: 16px;
     margin: 0;
     padding: 0;
-   
 }
-#cabecera
-{
-    background-color: #33a;
-    box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.5);
-    color: white;
-    font-weight: bold;
-    margin: 0;
-    padding: 0.5em;
-}
-#cabecera #tagline
-{
-    padding: 0 0 0 1em;
-    font-weight: normal;
-    font-size: 0.8em;
 
+header, footer {
+    text-align: center;
+    background-color: #33a;
+    color: white;
+    padding: 0.5em;
+    box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.5);
 }
-#container
-{
+
+#container {
     width: 70%;
     padding: 1em;
-    text-align: left;
-    border: 1px solid #DDD;
     margin: 0 auto;
+    border: 1px solid #DDD;
+    text-align: left; /* Align text to the left inside the container */
 }
-#container h1
-{
+
+#container h1 {
     font-size: 20px;
+}
+.nav-button a {
+    display: inline-block;
+    background-color: #4CAF50; /* Button color */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s;
+}
+
+.nav-button a:hover {
+    background-color: #45a049; /* Darker shade for hover effect */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center; /* Center the navigation */
+}
+
+nav li {
+    display: inline; /* Display links inline */
+}
+
+header, footer {
+    text-align: center;
+    background-color: #33a;
+    color: white;
+    padding: 0.5em;
+    box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.5);
+}
+
+/* Add this new rule */
+header h1 img {
+    max-width: 100px;
+    height: auto;
+}
+
+.banner {
+    width: 100%; /* Set the width as per your requirement */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* This will crop and cover the area with the image */
+    display: block;
+    margin: 0 auto;
 }
